@@ -42,7 +42,8 @@
 
 There is a huge world of generators for a React Project. First off, there is always the generator that comes straight from Facebook/React, create-react-app.
 
-`npx create-react-app appName`
+`npx create-react-app appName`- [React Router](#react-router-react-router-6-and-above)
+
 
 Easy enough! Here are many of the templates I maintain through my merced-spinup generator tool.
 
@@ -66,7 +67,7 @@ Easy enough! Here are many of the templates I maintain through my merced-spinup 
 - React Loaded using Snowpack and my custom TaskRunner state management pattern `npx merced-spinup snowreacttask appName`
 
 The only bundler I didn't cover in the above is Vite which can be generated like so...
-`npm init @vitejs/app appName --template react`
+`npm init vite`
 
 Other Official Generators from the Bundler makers...
 
