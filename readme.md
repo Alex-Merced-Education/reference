@@ -2,7 +2,7 @@
 
 Below you'll find many reference docs I maintain to help aspiring developers.
 
-- [MongoDb](./ref/mongodb.md)
+- [MongoDB](./ref/mongodb.md)
 - [Javascript DOM Reference](./ref/dom.md)
 - [Git reference](./ref/git.md)
 - [Express Reference](./ref/express.md)
