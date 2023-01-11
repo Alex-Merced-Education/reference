@@ -25,7 +25,15 @@ In this output you want to play where's waldo to find the error.
 
 - `SocketException: Already in use` This mean it may already be running or something is already running on port 27017 (default port for mongodb server). First you can try killing the port `sudo kill -9 $(sudo lsof -t -i:27017)` and then running `mongod`. If that doesn't work you run the server on a different port. `mongod --port 27020` any port would work. just keep in mind you'll need to use that port when connecting to mongo shell `mongosh --port 27020` and in your connection string `mongodb://localhost:27020/databasename`.
 
-- `Dbpath in use /data/db/mongod.lock` the lock file is a way that mongo makes sure writes to the file system are safe. Usually this file is deleted when the server shuts down, so if you had to kill a server this file may still exist and prevent it from running again. To fix the problem run `rm /data/db/mongod.lock` which may need `sudo`. If this is still a problem you may want mongod to just store data elsewhere.
+- `Dbpath in use /data/db/mongod.lock` the lock file is a way that mongo makes sure writes to the file system are safe. Usually this file is deleted when the server shuts down, so if you had to kill a server this file may still exist and prevent it from running again. To fix the problem run `rm /data/db/mongod.lock` which may need `sudo`. If this is still a problem you may want mongod to just store data elsewhere (directions further down).
+
+
+- `data directory /data/db not found` then you need to create the directory, but since it requires you to play in the root directories you'll need `sudo`.
+  - `sudo mkdir /data`
+  - `sudo mkdir /data/db`
+  - `sudo mongod`
+
+If that doesn't work follow the directions for mongo saving data elsewhere.
 
 **Having Mongod Store Data Elsewhere**
 
