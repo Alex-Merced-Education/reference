@@ -11,6 +11,7 @@ Below you'll find many reference docs I maintain to help aspiring developers.
 - [Bootcamp Guide](./ref/bootcamp.md)
 - [Self-Taught Developer Roadmap](./ref/roadmap.md)
 - [ReactJS Reference](./ref/react.md)
+- [Group Developer Work Guide](./ref/group.md)
 
 ### Blogs and Videos
 
